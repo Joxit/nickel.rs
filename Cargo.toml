@@ -13,8 +13,7 @@ readme = "README.md"
 keywords = ["nickel", "server", "web", "express"]
 
 [features]
-unstable = ["hyper/nightly", "compiletest_rs"]
-ssl = ["hyper/ssl"]
+unstable = ["compiletest_rs"]
 
 [dependencies]
 url = "1.0"
@@ -28,10 +27,8 @@ groupable = "0.2"
 mustache = "0.6"
 lazy_static = "0.1"
 modifier = "0.1"
-
-[dependencies.hyper]
-version = "0.9"
-default-features = false
+hyper-openssl = "0.2.3"
+hyper = "^0.10"
 
 [dependencies.compiletest_rs]
 version = "0.1"
